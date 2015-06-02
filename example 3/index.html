@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<title>Example on use of ng-repeat</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./controller.js"></script>
+	<body>
+		<div ng-app="myApp" ng-controller="myController as main">
+		<table ng-repeat="name in main.names">
+			<tr>
+				<td>{{name.id}}</td>
+				<td>{{name.name}}</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
