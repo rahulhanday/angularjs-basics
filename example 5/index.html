@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<title>Filters</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./controller.js"></script>
+	<body>
+		<div ng-app="myApp" ng-controller="myController as main">
+		<input type="text" ng-model="main.keyword">
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>City</td>
+			</tr>
+			<tr ng-repeat="name in main.names | filter: main.keyword">
+				<td>{{name.id}}</td>
+				<td>{{name.name}}</td>
+				<td>{{name.city}}</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
