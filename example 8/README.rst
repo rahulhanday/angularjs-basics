@@ -1,0 +1,1 @@
+Example on use of service and use filter on return data.
