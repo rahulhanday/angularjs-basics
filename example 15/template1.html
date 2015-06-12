@@ -1,0 +1,13 @@
+<table>
+	<input type="text" ng-model="keyword.Name">
+	<tr>
+		<td my-dir1>Name</td>
+		<td my-dir2>City</td>
+		<td my-dir3>Country</td>
+	</tr>
+	<tr ng-repeat="record in records| filter: keyword">
+		<td my-dir1>{{record.Name}}</td>
+		<td my-dir2>{{record.City | myFilter}}</td>
+		<td my-dir3>{{record.Country}}</td>
+	</tr>
+</table>
