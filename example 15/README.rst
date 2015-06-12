@@ -1,1 +1,1 @@
-Example using custom directive, custom filters, $http service and $q.
+Example using custom directive, custom filters, $http, $q service and routing.
