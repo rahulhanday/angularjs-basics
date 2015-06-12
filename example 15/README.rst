@@ -1,0 +1,1 @@
+Example using custom directive, custom filters, $http service and $q.
