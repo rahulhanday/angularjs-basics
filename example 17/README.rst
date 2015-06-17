@@ -1,0 +1,1 @@
+Using accordion angularjs ui bootstrap.
