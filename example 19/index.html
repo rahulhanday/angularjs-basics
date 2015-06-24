@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scope Isolation</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+		<script type="text/javascript" src="./app.js"></script>
+		<script type="text/javascript" src="./directive.js"></script>
+		<script type="text/javascript" src="./controller.js"></script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myController">
+			<p mydir detail="{{customer.name}}"></p>
+			<p>{{customer.name}}</p>
+			<p mydir1 detail="customer.city"></p>
+			<p>{{customer.city}}</p>
+			<p>Click to view text: {{inputText}}</p>
+			<div mydir2 clickme="alertMe()"></div>
+		</div>
+	</body>
+</html>
